@@ -191,6 +191,7 @@ body{
 }
 
 .GUIArea .GUIWindow #GUISeparate > .GUIClient{
+	user-select: none;
 	box-sizing: border-box;
 	background-color: #aaaaaa;
 	border: outset 2px #b8b7b7;

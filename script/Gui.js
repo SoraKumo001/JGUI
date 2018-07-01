@@ -2164,7 +2164,8 @@
 
 	
 		function onClick(e){
-			proc(this.value);
+			if(proc != null)
+				proc(this.value);
 			win.close();
 		}
 		return win;
