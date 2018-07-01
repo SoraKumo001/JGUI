@@ -15,16 +15,16 @@ function onLoad(){
 	win.addChild(list,"client");
 	//リストビューにアイテムを追加
 	var titles = [
-		["Sample01/","フレームウインドウテスト",],
-		["Sample02/","複合ウインドウテスト"],
-		["Sample03/","セパレータ"],
-		["Sample04/","リストビュー"],
-		["Sample05/","ツリービュー"]
+		["Sample01","フレームウインドウテスト",],
+		["Sample02","複合ウインドウテスト"],
+		["Sample03","セパレータ"],
+		["Sample04","リストビュー"],
+		["Sample05","ツリービュー"]
 	];
 	titles.forEach(function(value,index){
 		list.addItem(index+1);
 		list.setItem(index,1,value[1]);
-		list.setItem(index,2,location.href+value[0]);
+		list.setItem(index,2,location.href+"Samples/"+value[0]);
 	});
 
 	//リストビューアイテムクリック処理
